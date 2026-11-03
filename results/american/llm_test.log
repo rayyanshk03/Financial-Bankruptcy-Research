@@ -1,0 +1,51 @@
+500 firms (test), 50 bankrupt; model qwen2.5:7b
+
+--- example prompt ---
+【Task】: As a professional financial analyst, please conduct a comprehensive analysis of the various financial indicators of the following company to estimate whether the company will go bankrupt within the next year. The risk of bankruptcy is graded on a scale of 1-10, with a higher number indicating a higher risk. Please maintain an objective and impartial attitude and make a serious and responsible judgment.
+
+Below are the financial indicators of the company:
+- roa (net income / total assets): -2.48
+- quick_ratio ((current assets - inventory) / current liabilities): 0.124
+- debt_to_equity (total liabilities / (total assets - total liabilities)): -1.76
+- market_value_to_liabilities (market value of equity / total liabilities): 1e+03
+- net_margin (net income / net sales): -2.97
+- assets_growth (year-on-year growth of total assets): 0.0379
+
+【Assessment Process】:
+1. Firstly, focus on the key indicators, especially leverage and liquidity, to analyze the company's financial condition comprehensively. It is essential to weigh the pros and cons. Although some indicators have a positive impact on the company, the negative effects of other indicators should also be considered;
+2. Based on the analysis results, determine an accurate risk rating for the company;
+3. Finally, draw a precise conclusion. If the company's risk rating exceeds 5, it is considered that the company will go bankrupt within the next year; if it is 5 or less, it is considered that it will not.
+Answer with only the final line, exactly in the form "【Result】: <rating>" where <rating> is an integer from 1 to 10.
+【Result】:
+
+25/500  95s
+50/500  189s
+75/500  283s
+100/500  379s
+125/500  475s
+150/500  569s
+175/500  665s
+200/500  763s
+225/500  862s
+250/500  958s
+275/500  1050s
+300/500  1143s
+325/500  1235s
+350/500  1327s
+375/500  1418s
+400/500  1511s
+425/500  1606s
+450/500  1701s
+475/500  1800s
+500/500  1895s
+{
+  "accuracy": 0.37,
+  "precision_w": 0.9069,
+  "recall_w": 0.37,
+  "f1_w": 0.4408,
+  "precision_bankrupt": 0.135,
+  "recall_bankrupt": 0.98,
+  "f1_bankrupt": 0.2373,
+  "auc_mean_rating": 0.85,
+  "unparsed_votes_%": 0.0
+}

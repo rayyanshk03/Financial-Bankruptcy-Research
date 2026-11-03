@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.945,
+  "precision_w": 0.8948648648648649,
+  "recall_w": 0.945,
+  "f1_w": 0.9192493573264782,
+  "precision_bankrupt": 0.0,
+  "recall_bankrupt": 0.0,
+  "f1_bankrupt": 0.0,
+  "auc": 0.48398715840576306,
+  "threshold": 0.6318079829216003,
+  "n_train": 160.0,
+  "epochs": 1.0
+}

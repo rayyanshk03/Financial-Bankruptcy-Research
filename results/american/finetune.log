@@ -1,0 +1,13 @@
+W1103 08:04:55.847000 89252 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:52,  2.56it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 707.37it/s]
+[transformers] [1mQwen2ForSequenceClassification LOAD REPORT[0m from: Qwen/Qwen2.5-0.5B-Instruct
+Key          | Status  | 
+-------------+---------+-
+score.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+training on 2000 firms (400 bankrupt), device mps
+/opt/homebrew/Caskroom/miniconda/base/lib/python3.13/multiprocessing/resource_tracker.py:400: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-89252-go_dhm86'}
+  warnings.warn(

@@ -1,0 +1,43 @@
+300 firms (train), 45 bankrupt; model qwen2.5:7b
+
+--- example prompt ---
+【Task】: As a professional financial analyst, please conduct a comprehensive analysis of the various financial indicators of the following company to estimate whether the company will go bankrupt within the next year. The risk of bankruptcy is graded on a scale of 1-10, with a higher number indicating a higher risk. Please maintain an objective and impartial attitude and make a serious and responsible judgment.
+
+Below are the financial indicators of the company:
+- roa (net income / total assets): -15.8
+- quick_ratio ((current assets - inventory) / current liabilities): 0.0098
+- debt_to_equity (total liabilities / (total assets - total liabilities)): -1.09
+- market_value_to_liabilities (market value of equity / total liabilities): 0.81
+- net_margin (net income / net sales): -20.8
+- assets_growth (year-on-year growth of total assets): -0.575
+
+【Assessment Process】:
+1. Firstly, focus on the key indicators, especially leverage and liquidity, to analyze the company's financial condition comprehensively. It is essential to weigh the pros and cons. Although some indicators have a positive impact on the company, the negative effects of other indicators should also be considered;
+2. Based on the analysis results, determine an accurate risk rating for the company;
+3. Finally, draw a precise conclusion. If the company's risk rating exceeds 5, it is considered that the company will go bankrupt within the next year; if it is 5 or less, it is considered that it will not.
+Answer with only the final line, exactly in the form "【Result】: <rating>" where <rating> is an integer from 1 to 10.
+【Result】:
+
+25/300  80s
+50/300  185s
+75/300  278s
+100/300  368s
+125/300  458s
+150/300  548s
+175/300  638s
+200/300  729s
+225/300  820s
+250/300  911s
+275/300  1002s
+300/300  1095s
+{
+  "accuracy": 0.4933,
+  "precision_w": 0.8596,
+  "recall_w": 0.4933,
+  "f1_w": 0.5484,
+  "precision_bankrupt": 0.2199,
+  "recall_bankrupt": 0.9333,
+  "f1_bankrupt": 0.3559,
+  "auc_mean_rating": 0.8289,
+  "unparsed_votes_%": 0.0
+}

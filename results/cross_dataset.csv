@@ -1,0 +1,13 @@
+setting,model,n_test,n_bankrupt,auc,auc_low,auc_high,recall,recall_low,recall_high
+train American -> test Taiwan,Logistic,6819,220,0.92,0.9044,0.9365,0.6227,0.5622,0.6864
+train Taiwan -> test American 2015-18,Logistic,12282,119,0.8334,0.8034,0.8628,0.2353,0.1607,0.3176
+reference: American -> American 2015-18,Logistic,12282,119,0.8564,0.8309,0.8829,0.3025,0.2222,0.3874
+reference: Taiwan 5-fold CV,Logistic,6819,220,0.9244,0.9098,0.939,0.5091,0.447,0.5787
+train American -> test Taiwan,LightGBM,6819,220,0.805,0.7802,0.8279,0.05,0.0233,0.0816
+train Taiwan -> test American 2015-18,LightGBM,12282,119,0.8293,0.7991,0.8561,0.2521,0.1743,0.3301
+reference: American -> American 2015-18,LightGBM,12282,119,0.871,0.8395,0.9003,0.2773,0.1983,0.3566
+reference: Taiwan 5-fold CV,LightGBM,6819,220,0.92,0.9032,0.9377,0.4955,0.4293,0.5612
+train American -> test Taiwan,RF,6819,220,0.8187,0.7976,0.8423,0.0136,0.0,0.0296
+train Taiwan -> test American 2015-18,RF,12282,119,0.8346,0.8075,0.8625,0.0756,0.032,0.1271
+reference: American -> American 2015-18,RF,12282,119,0.8696,0.8365,0.8996,0.1765,0.1119,0.2482
+reference: Taiwan 5-fold CV,RF,6819,220,0.9242,0.9069,0.9419,0.5273,0.4651,0.5952

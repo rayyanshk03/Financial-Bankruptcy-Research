@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+# derived / large files that run_all.sh regenerates
+data/processed/
+data/american/american_ratios.csv
+colab/american_ratios.csv
+results/pip_install.log

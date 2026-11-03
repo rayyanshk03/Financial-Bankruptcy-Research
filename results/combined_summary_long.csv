@@ -1,0 +1,32 @@
+dataset,model,auc,recall_bankrupt,f1_bankrupt
+Polish (5 yrs ahead),DT,0.7421,0.2037,0.0547
+Polish (5 yrs ahead),LightGBM,0.9655,0.716,0.707
+Polish (5 yrs ahead),Logistic,0.7185,0.4568,0.1928
+Polish (5 yrs ahead),NN,0.5871,0.0494,0.058
+Polish (5 yrs ahead),RF,0.8897,0.5185,0.468
+Polish (5 yrs ahead),SVM,0.6722,0.2222,0.1754
+Polish (5 yrs ahead),XGBoost,0.9673,0.6358,0.706
+Polish (1 yr ahead),DT,0.8563,0.5366,0.4835
+Polish (1 yr ahead),LightGBM,0.9635,0.7683,0.729
+Polish (1 yr ahead),Logistic,0.8119,0.5163,0.3966
+Polish (1 yr ahead),NN,0.7872,0.1829,0.1997
+Polish (1 yr ahead),RF,0.9144,0.6748,0.5304
+Polish (1 yr ahead),SVM,0.7939,0.4919,0.3785
+Polish (1 yr ahead),XGBoost,0.9659,0.7561,0.7368
+American (2015-2018),DT,0.8983,0.3473,0.156
+American (2015-2018),LightGBM,0.9067,0.395,0.2294
+American (2015-2018),Logistic,0.7799,0.2661,0.0697
+American (2015-2018),NN,0.6885,0.1765,0.0741
+American (2015-2018),RF,0.9116,0.2465,0.2112
+American (2015-2018),SVM,0.7761,0.2185,0.0929
+American (2015-2018),XGBoost,0.9095,0.2885,0.2305
+Taiwan (5-fold CV),DT,0.893,0.5364,0.3655
+Taiwan (5-fold CV),LightGBM,0.9406,0.5455,0.4906
+Taiwan (5-fold CV),Logistic,0.921,0.4697,0.4007
+Taiwan (5-fold CV),NN,0.7318,0.1348,0.1376
+Taiwan (5-fold CV),RF,0.9406,0.553,0.4539
+Taiwan (5-fold CV),SVM,0.8669,0.403,0.3206
+Taiwan (5-fold CV),XGBoost,0.9346,0.5621,0.4619
+American (2015-2018),Altman Z-score,0.7942,0.8824,0.0408
+Polish (5 yrs ahead),Altman Z-score,0.6206,0.3333,0.1935
+Polish (1 yr ahead),Altman Z-score,0.7194,0.5244,0.3209

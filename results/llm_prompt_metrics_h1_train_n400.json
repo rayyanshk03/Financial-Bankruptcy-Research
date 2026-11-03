@@ -1,0 +1,11 @@
+{
+  "accuracy": 0.24,
+  "precision_w": 0.8131683958499601,
+  "recall_w": 0.24,
+  "f1_w": 0.21446930033317468,
+  "precision_bankrupt": 0.15921787709497207,
+  "recall_bankrupt": 0.95,
+  "f1_bankrupt": 0.2727272727272727,
+  "auc_mean_rating": 0.6318872549019607,
+  "unparsed_votes_%": 0.0
+}

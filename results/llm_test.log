@@ -1,0 +1,71 @@
+1000 firms (test), 54 bankrupt; model qwen2.5:7b
+
+--- example prompt ---
+【Task】: As a professional financial analyst, please conduct a comprehensive analysis of the various financial indicators of the following company to estimate whether the company will go bankrupt within the next year. The risk of bankruptcy is graded on a scale of 1-10, with a higher number indicating a higher risk. Please maintain an objective and impartial attitude and make a serious and responsible judgment.
+
+Below are the financial indicators of the company:
+- working_capital_to_assets (working capital / total assets): 0.285
+- liabilities_to_assets (total liabilities / total assets): 0.394
+- gross_profit_to_st_liabilities (gross profit / short-term liabilities): 0.292
+- gross_profit_3y_to_assets (gross profit (in 3 years) / total assets): 0.169
+- liquidity_to_operating_cost ((current assets - inventory - short-term liabilities) / (sales - gross profit - depreciation)): 0.108
+- cash_defensive_days ([(cash + short-term securities + receivables - short-term liabilities) / (operating expenses - depreciation)] * 365): -6.78
+
+【Assessment Process】:
+1. Firstly, focus on the key indicators, especially leverage and liquidity, to analyze the company's financial condition comprehensively. It is essential to weigh the pros and cons. Although some indicators have a positive impact on the company, the negative effects of other indicators should also be considered;
+2. Based on the analysis results, determine an accurate risk rating for the company;
+3. Finally, draw a precise conclusion. If the company's risk rating exceeds 5, it is considered that the company will go bankrupt within the next year; if it is 5 or less, it is considered that it will not.
+Answer with only the final line, exactly in the form "【Result】: <rating>" where <rating> is an integer from 1 to 10.
+【Result】:
+
+25/1000  86s
+50/1000  169s
+75/1000  255s
+100/1000  340s
+125/1000  434s
+150/1000  528s
+175/1000  619s
+200/1000  716s
+225/1000  815s
+250/1000  910s
+275/1000  1010s
+300/1000  1107s
+325/1000  1213s
+350/1000  1312s
+375/1000  1406s
+400/1000  1497s
+425/1000  1604s
+450/1000  1710s
+475/1000  1814s
+500/1000  1918s
+525/1000  2015s
+550/1000  2109s
+575/1000  2207s
+600/1000  2303s
+625/1000  2398s
+650/1000  2492s
+675/1000  2585s
+700/1000  2681s
+725/1000  2776s
+750/1000  2874s
+775/1000  2975s
+800/1000  3074s
+825/1000  3175s
+850/1000  3279s
+875/1000  3381s
+900/1000  3486s
+925/1000  3589s
+950/1000  3692s
+975/1000  3795s
+1000/1000  3899s
+{
+  "accuracy": 0.174,
+  "precision_w": 0.9339,
+  "recall_w": 0.174,
+  "f1_w": 0.2218,
+  "precision_bankrupt": 0.0594,
+  "recall_bankrupt": 0.963,
+  "f1_bankrupt": 0.1118,
+  "auc_mean_rating": 0.6618,
+  "unparsed_votes_%": 0.0
+}

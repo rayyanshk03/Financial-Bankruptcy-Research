@@ -1,0 +1,19 @@
+{
+  "horizon": 1,
+  "key_features": [
+    "working_capital_to_assets",
+    "liabilities_to_assets",
+    "gross_profit_to_st_liabilities",
+    "gross_profit_3y_to_assets",
+    "liquidity_to_operating_cost",
+    "cash_defensive_days"
+  ],
+  "definitions": {
+    "working_capital_to_assets": "working capital / total assets",
+    "liabilities_to_assets": "total liabilities / total assets",
+    "gross_profit_to_st_liabilities": "gross profit / short-term liabilities",
+    "gross_profit_3y_to_assets": "gross profit (in 3 years) / total assets",
+    "liquidity_to_operating_cost": "(current assets - inventory - short-term liabilities) / (sales - gross profit - depreciation)",
+    "cash_defensive_days": "[(cash + short-term securities + receivables - short-term liabilities) / (operating expenses - depreciation)] * 365"
+  }
+}

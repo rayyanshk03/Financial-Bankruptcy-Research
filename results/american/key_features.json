@@ -1,0 +1,19 @@
+{
+  "dataset": "american",
+  "key_features": [
+    "roa",
+    "quick_ratio",
+    "debt_to_equity",
+    "market_value_to_liabilities",
+    "net_margin",
+    "assets_growth"
+  ],
+  "definitions": {
+    "roa": "net income / total assets",
+    "quick_ratio": "(current assets - inventory) / current liabilities",
+    "debt_to_equity": "total liabilities / (total assets - total liabilities)",
+    "market_value_to_liabilities": "market value of equity / total liabilities",
+    "net_margin": "net income / net sales",
+    "assets_growth": "year-on-year growth of total assets"
+  }
+}

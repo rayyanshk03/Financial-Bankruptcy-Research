@@ -1,0 +1,7 @@
+{'scaling': 'log', 'auc_before': np.float64(0.8615486974202654), 'auc_after': 0.8442410755307632, 'recall_before': np.float64(0.3697478991596639), 'recall_after': 0.2689075630252101, 'f1_before': np.float64(0.13707165109034267), 'f1_after': 0.20512820512820512, 'best_params': "{'alpha': 0.0001, 'hidden_layer_sizes': (64,), 'ratio': 0.1}"}
+{'scaling': 'minmax', 'auc_before': np.float64(0.5713007557705315), 'auc_after': 0.8480527457221482, 'recall_before': np.float64(0.04201680672268908), 'recall_after': 0.20168067226890757, 'f1_before': np.float64(0.028735632183908046), 'f1_after': 0.15, 'best_params': "{'alpha': 0.0001, 'hidden_layer_sizes': (64,), 'ratio': 0.1}"}
+{'scaling': 'zscore', 'auc_before': np.float64(0.632561073430441), 'auc_after': 0.8302324794095884, 'recall_before': np.float64(0.11764705882352941), 'recall_after': 0.19327731092436976, 'f1_before': np.float64(0.056451612903225805), 'f1_after': 0.20087336244541484, 'best_params': "{'alpha': 0.0001, 'hidden_layer_sizes': (64,), 'ratio': 0.1}"}
+scaling  auc_before  auc_after  recall_before  recall_after  f1_before  f1_after
+    log       0.862      0.844          0.370         0.269      0.137     0.205
+ minmax       0.571      0.848          0.042         0.202      0.029     0.150
+ zscore       0.633      0.830          0.118         0.193      0.056     0.201

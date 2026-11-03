@@ -1,0 +1,5 @@
+dataset,model,n_test,n_bankrupt,auc,auc_low,auc_high,recall,recall_low,recall_high
+American (2015-2018),LightGBM,12282,119,0.9069,0.8765,0.9332,0.395,0.3083,0.4771
+Polish (5 yrs ahead),LightGBM,1389,54,0.9694,0.9401,0.9875,0.6852,0.551,0.8085
+Polish (1 yr ahead),LightGBM,1170,82,0.9612,0.9346,0.9814,0.7561,0.6628,0.8473
+"Taiwan (5-fold CV, pooled)",LightGBM,6819,220,0.9339,0.9168,0.9508,0.5455,0.4794,0.6171

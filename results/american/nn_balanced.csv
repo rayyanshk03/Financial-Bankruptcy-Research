@@ -1,0 +1,4 @@
+scaling,auc_before,auc_after,recall_before,recall_after,f1_before,f1_after,best_params
+log,0.8615,0.8442,0.3697,0.2689,0.1371,0.2051,"{'alpha': 0.0001, 'hidden_layer_sizes': (64,), 'ratio': 0.1}"
+minmax,0.5713,0.8481,0.042,0.2017,0.0287,0.15,"{'alpha': 0.0001, 'hidden_layer_sizes': (64,), 'ratio': 0.1}"
+zscore,0.6326,0.8302,0.1176,0.1933,0.0565,0.2009,"{'alpha': 0.0001, 'hidden_layer_sizes': (64,), 'ratio': 0.1}"

@@ -1,0 +1,14 @@
+fold 1/5 done  66s
+fold 2/5 done  132s
+fold 3/5 done  200s
+fold 4/5 done  266s
+fold 5/5 done  337s
+          accuracy   f1_w  precision_bankrupt  recall_bankrupt  f1_bankrupt    auc
+model                                                                             
+LightGBM     0.963  0.965               0.447            0.545        0.491  0.941
+RF           0.957  0.961               0.385            0.553        0.454  0.941
+XGBoost      0.958  0.961               0.393            0.562        0.462  0.935
+Logistic     0.955  0.958               0.350            0.470        0.401  0.921
+DT           0.940  0.949               0.277            0.536        0.366  0.893
+SVM          0.945  0.950               0.267            0.403        0.321  0.867
+NN           0.943  0.944               0.202            0.135        0.138  0.732

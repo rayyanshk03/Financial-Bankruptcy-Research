@@ -1,0 +1,47 @@
+400 firms (train), 60 bankrupt; model qwen2.5:7b
+
+--- example prompt ---
+【Task】: As a professional financial analyst, please conduct a comprehensive analysis of the various financial indicators of the following company to estimate whether the company will go bankrupt within the next year. The risk of bankruptcy is graded on a scale of 1-10, with a higher number indicating a higher risk. Please maintain an objective and impartial attitude and make a serious and responsible judgment.
+
+Below are the financial indicators of the company:
+- working_capital_to_assets (working capital / total assets): 0.0562
+- liabilities_to_assets (total liabilities / total assets): 0.76
+- gross_profit_to_st_liabilities (gross profit / short-term liabilities): 0.0196
+- gross_profit_3y_to_assets (gross profit (in 3 years) / total assets): 0.0688
+- liquidity_to_operating_cost ((current assets - inventory - short-term liabilities) / (sales - gross profit - depreciation)): 0.0413
+- cash_defensive_days ([(cash + short-term securities + receivables - short-term liabilities) / (operating expenses - depreciation)] * 365): -21.9
+
+【Assessment Process】:
+1. Firstly, focus on the key indicators, especially leverage and liquidity, to analyze the company's financial condition comprehensively. It is essential to weigh the pros and cons. Although some indicators have a positive impact on the company, the negative effects of other indicators should also be considered;
+2. Based on the analysis results, determine an accurate risk rating for the company;
+3. Finally, draw a precise conclusion. If the company's risk rating exceeds 5, it is considered that the company will go bankrupt within the next year; if it is 5 or less, it is considered that it will not.
+Answer with only the final line, exactly in the form "【Result】: <rating>" where <rating> is an integer from 1 to 10.
+【Result】:
+
+25/400  79s
+50/400  162s
+75/400  249s
+100/400  338s
+125/400  428s
+150/400  518s
+175/400  609s
+200/400  700s
+225/400  796s
+250/400  889s
+275/400  981s
+300/400  1075s
+325/400  1160s
+350/400  1246s
+375/400  1336s
+400/400  1428s
+{
+  "accuracy": 0.24,
+  "precision_w": 0.8132,
+  "recall_w": 0.24,
+  "f1_w": 0.2145,
+  "precision_bankrupt": 0.1592,
+  "recall_bankrupt": 0.95,
+  "f1_bankrupt": 0.2727,
+  "auc_mean_rating": 0.6319,
+  "unparsed_votes_%": 0.0
+}

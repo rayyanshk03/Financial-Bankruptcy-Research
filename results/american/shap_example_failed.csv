@@ -1,0 +1,13 @@
+firm_row,ratio,shap
+118,market_value_to_liabilities,2.704
+118,quick_ratio,0.724
+118,sales_growth,-0.545
+118,liabilities_to_assets,0.416
+356,market_value_to_liabilities,1.544
+356,quick_ratio,0.553
+356,log_total_assets,0.286
+356,roa_change,-0.284
+363,market_value_to_liabilities,1.159
+363,log_total_assets,-0.82
+363,liabilities_to_assets,0.407
+363,quick_ratio,0.316

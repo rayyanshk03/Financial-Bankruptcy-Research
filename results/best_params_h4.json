@@ -1,0 +1,100 @@
+{
+  "Logistic|log": {
+    "C": 1
+  },
+  "SVM|log": {
+    "C": 1,
+    "gamma": 0.01
+  },
+  "XGBoost|log": {
+    "learning_rate": 0.1,
+    "max_depth": 5,
+    "n_estimators": 400
+  },
+  "DT|log": {
+    "max_depth": 5,
+    "min_samples_leaf": 20
+  },
+  "RF|log": {
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 300
+  },
+  "NN|log": {
+    "alpha": 0.0001,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ]
+  },
+  "LightGBM|log": {
+    "learning_rate": 0.1,
+    "n_estimators": 400,
+    "num_leaves": 31
+  },
+  "Logistic|minmax": {
+    "C": 10
+  },
+  "SVM|minmax": {
+    "C": 10,
+    "gamma": "scale"
+  },
+  "XGBoost|minmax": {
+    "learning_rate": 0.1,
+    "max_depth": 5,
+    "n_estimators": 400
+  },
+  "DT|minmax": {
+    "max_depth": 3,
+    "min_samples_leaf": 5
+  },
+  "RF|minmax": {
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 300
+  },
+  "NN|minmax": {
+    "alpha": 0.0001,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ]
+  },
+  "LightGBM|minmax": {
+    "learning_rate": 0.1,
+    "n_estimators": 400,
+    "num_leaves": 31
+  },
+  "Logistic|zscore": {
+    "C": 10
+  },
+  "SVM|zscore": {
+    "C": 10,
+    "gamma": "scale"
+  },
+  "XGBoost|zscore": {
+    "learning_rate": 0.1,
+    "max_depth": 5,
+    "n_estimators": 400
+  },
+  "DT|zscore": {
+    "max_depth": 5,
+    "min_samples_leaf": 20
+  },
+  "RF|zscore": {
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 300
+  },
+  "NN|zscore": {
+    "alpha": 0.0001,
+    "hidden_layer_sizes": [
+      64
+    ]
+  },
+  "LightGBM|zscore": {
+    "learning_rate": 0.1,
+    "n_estimators": 400,
+    "num_leaves": 31
+  }
+}
